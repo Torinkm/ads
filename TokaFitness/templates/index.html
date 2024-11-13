@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="styles.css">
+        <title>Duck Site</title>
+    
+	<style>
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		
+		li {
+		  float: left;
+		}
+		
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		li a:hover {
+		  background-color: #111;
+		}
+		#login{
+      position: absolute;
+      right: 30px;
+    }
+	#booking{
+        position: absolute;
+        right: 125px;
+    }
+		</style>
+		
+    </head>
+    <body style="background-color:#BEE3BA;">
+
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About</a></li>
+			<li><a href="health">Health</a></li>
+            <li><a id="login" href="login" >Login</a></li>
+			<li><a id="booking" href="booking">Bookings</a></li>
+        </ul> 
+	 
+    <h1> Duck Site </h1> 
+    <h4> Welcome to the Duck site {{name}}!</h4>
+    <p> We love ducks here! </p>
+
+    </body>
+</html>

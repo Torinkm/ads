@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <h1>{{title}}</h1>
+    <script src="/static/basetemp.css"></script>
+</head>
+<body>
+    <h1>This is the user only page</h1>
+    <p>Rhis is the {{title}} page.</p>
+    <a class="nav-lin" href="{{ url_for('home') }}">Home Page</a>
+    <button type="button" class="btn-primary">Help</button>
+
+    <script>
+        function togglepassword(){
+            var passwordInput = document.getElementById("Password")
+            if (passwordInput.type === "password"){
+                passwordInput.type = "text"
+                event.target.textContent = "Hide"
+            } else {
+                passwordInput.type = "password"
+                event.target.textContent = "Show"
+            }
+        }
+    </script>
+</body>
+</html>
+{% endblock %} 

@@ -1,0 +1,28 @@
+<html>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"></link>
+<script src="/static/alert.js"></script>
+    <div class="messages" style="height: 20px;">
+            <div id="alert" class="alert alter-dissmissable fade show {% if category == 'danger' %} alert-danger{% elif category == 'success' %} alert-success {% else %} alert-info {% endif %}">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+    </div>
+    <div class="container" style="width: 300px">
+        <form action="/login" method="POST">
+            <h3 stlye="text-align:center;">This is the Login Page</h3>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User Name</label>
+                <input type="login" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Never share your password with anyone else.</div>
+            </div>
+            <div stlye="text-align: center;">
+                <p><input class="btn btn-primary" style="justify-content: center;" type="submit" name="submit" /></p>
+            </div>
+            <a class= 'nav-link' href="/register" stlye="text-align: center;"> Need to register?</a>
+        </form>
+    </div>
+</html>
